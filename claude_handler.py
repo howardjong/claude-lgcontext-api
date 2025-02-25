@@ -39,27 +39,23 @@ def query_claude(question, assistant_config):
         api_key = os.environ.get("ANTHROPIC_API_KEY")
         if not api_key:
             raise ValueError("ANTHROPIC_API_KEY environment variable is not set")
-            
-        client = anthropic.Client(api_key=api_key)
 
-        system_prompt = (
-            f"{assistant_config['instructions']}\n\n"
-            f"Below is a knowledge document with information about Howard. Use this document to answer the user's question:\n\n"
-            f"{assistant_config['knowledgeContent']}"
-        )
+        client = anthropic.Anthropic(api_key=api_key)
 
-        prompt = (
-            f"{system_prompt}\n\n"
-            f"{anthropic.HUMAN_PROMPT} {question}\n\n"
-            f"{anthropic.AI_PROMPT}"
-        )
-
-        response = client.completion(
-            prompt=prompt,
+        # Create message with system prompt in the correct format
+        message = client.messages.create(
             model=assistant_config["model"],
-            max_tokens_to_sample=300,
+            max_tokens=300,
+            system=f"Below is a knowledge document with information about Howard. Use this document to answer the user's question:\n\n{assistant_config['knowledgeContent']}\n\n{assistant_config['instructions']}",
+            messages=[
+                {
+                    "role": "user",
+                    "content": question
+                }
+            ]
         )
-        return response.completion
+        return message.content[0].text
+
     except Exception as e:
         logger.error(f"Error querying Claude: {e}")
         raise
