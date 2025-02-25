@@ -10,13 +10,24 @@ def create_claude_assistant():
     config_path = "claude_assistant_config.json"
     try:
         if not os.path.exists(config_path):
-            # Read the full knowledge document
-            with open("rag_knowledge_24feb2025.txt", "r", encoding="utf-8") as f:
-                knowledge_content = f.read()
+            # Get knowledge content from environment variables, supporting chunked content
+            knowledge_content = ""
+            chunk_index = 1
+            while True:
+                chunk = os.environ.get(f"RAG_KNOWLEDGE_CONTENT_{chunk_index}")
+                if not chunk:
+                    # If no chunks found, try the single variable
+                    knowledge_content = os.environ.get("RAG_KNOWLEDGE_CONTENT")
+                    if not knowledge_content:
+                        raise ValueError("RAG_KNOWLEDGE_CONTENT environment variable is not set")
+                    break
+                knowledge_content += chunk
+                chunk_index += 1
 
-            # Read instructions from file
-            with open("prompt_instructions.txt", "r", encoding="utf-8") as f:
-                instructions = f.read()
+            # Get instructions from environment variable
+            instructions = os.environ.get("PROMPT_INSTRUCTIONS")
+            if not instructions:
+                raise ValueError("PROMPT_INSTRUCTIONS environment variable is not set")
 
             assistant_config = {
                 "knowledgeContent": knowledge_content,
