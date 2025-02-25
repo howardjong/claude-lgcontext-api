@@ -84,8 +84,7 @@ def webhook():
         logger.info(f"Claude response generated successfully")
 
         return jsonify({
-            'response': response,
-            'status': 'success'
+            'output': response
         })
 
     except Exception as e:

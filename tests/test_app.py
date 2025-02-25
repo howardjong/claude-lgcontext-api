@@ -86,9 +86,8 @@ class TestClaudeService(unittest.TestCase):
                               json={'question': 'Test question'})
         self.assertEqual(response.status_code, 200)
         data = json.loads(response.data)
-        self.assertIn('response', data)
-        self.assertEqual(data['status'], 'success')
-        self.assertEqual(data['response'], "This is a mock webhook response")
+        self.assertIn('output', data)
+        self.assertEqual(data['output'], "This is a mock webhook response")
 
 if __name__ == '__main__':
     unittest.main()
