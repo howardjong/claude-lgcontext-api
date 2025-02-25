@@ -35,9 +35,10 @@ def signal_handler(sig, frame):
 signal.signal(signal.SIGINT, signal_handler)
 signal.signal(signal.SIGTERM, signal_handler)
 
-@app.before_first_request
-def before_first_request():
-    """Initialize services before first request"""
+# Initialize Claude before first request using middleware
+@app.before_request
+def ensure_claude_initialized():
+    """Ensure Claude is initialized before handling requests"""
     global claude_config
     if claude_config is None:
         init_claude()
