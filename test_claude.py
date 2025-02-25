@@ -3,7 +3,9 @@ import os
 from claude_handler import create_claude_assistant, query_claude
 
 def test_claude_response():
-    # Initialize Claude assistant with new instructions
+    # Force rebuild of config to use latest knowledge file
+    if os.path.exists("claude_assistant_config.json"):
+        os.remove("claude_assistant_config.json")
     claude_config = create_claude_assistant()
     
     # Test question
