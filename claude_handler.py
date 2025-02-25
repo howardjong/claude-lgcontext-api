@@ -19,15 +19,27 @@ def create_claude_assistant():
                     # If no chunks found, try the single variable
                     knowledge_content = os.environ.get("RAG_KNOWLEDGE_CONTENT")
                     if not knowledge_content:
-                        raise ValueError("RAG_KNOWLEDGE_CONTENT environment variable is not set")
+                        if chunk_index == 1:
+                            logger.error("No knowledge content found in environment variables")
+                            raise ValueError("RAG_KNOWLEDGE_CONTENT environment variable is not set")
+                        break
                     break
                 knowledge_content += chunk
                 chunk_index += 1
 
+            if not knowledge_content:
+                logger.error("Empty knowledge content after combining all chunks")
+                raise ValueError("Knowledge content is empty after combining all chunks")
+
             # Get instructions from environment variable
             instructions = os.environ.get("PROMPT_INSTRUCTIONS")
             if not instructions:
+                logger.error("PROMPT_INSTRUCTIONS environment variable is not set")
                 raise ValueError("PROMPT_INSTRUCTIONS environment variable is not set")
+
+            if not instructions.strip():
+                logger.error("PROMPT_INSTRUCTIONS environment variable is empty")
+                raise ValueError("PROMPT_INSTRUCTIONS environment variable is empty")
 
             assistant_config = {
                 "knowledgeContent": knowledge_content,
@@ -36,9 +48,11 @@ def create_claude_assistant():
             }
             with open(config_path, "w", encoding="utf-8") as f:
                 json.dump(assistant_config, f, indent=2)
+            logger.info("Successfully created Claude assistant configuration")
         else:
             with open(config_path, "r", encoding="utf-8") as f:
                 assistant_config = json.load(f)
+            logger.info("Successfully loaded existing Claude assistant configuration")
         return assistant_config
     except Exception as e:
         logger.error(f"Error creating Claude assistant: {e}")
@@ -49,7 +63,12 @@ def query_claude(question, assistant_config):
     try:
         api_key = os.environ.get("ANTHROPIC_API_KEY")
         if not api_key:
+            logger.error("ANTHROPIC_API_KEY environment variable is not set")
             raise ValueError("ANTHROPIC_API_KEY environment variable is not set")
+
+        if not api_key.strip():
+            logger.error("ANTHROPIC_API_KEY environment variable is empty")
+            raise ValueError("ANTHROPIC_API_KEY environment variable is empty")
 
         client = anthropic.Anthropic(api_key=api_key)
 
@@ -65,6 +84,7 @@ def query_claude(question, assistant_config):
                 }
             ]
         )
+        logger.info("Successfully generated Claude response")
         return message.content[0].text
 
     except Exception as e:

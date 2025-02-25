@@ -10,11 +10,15 @@ class TestClaudeService(unittest.TestCase):
         self.app.testing = True
         os.environ['ANTHROPIC_API_KEY'] = 'test_key'
 
+        # Mock environment variables for testing
+        os.environ['RAG_KNOWLEDGE_CONTENT_1'] = 'Test knowledge content chunk 1'
+        os.environ['PROMPT_INSTRUCTIONS'] = 'Test instructions'
+
         # Mock config for testing
         self.mock_config = {
             "model": "claude-3-5-sonnet-20241022",
             "instructions": "Test instructions",
-            "knowledgeContent": "Test content"
+            "knowledgeContent": "Test knowledge content chunk 1"
         }
 
     @patch('app.claude_config')
@@ -88,6 +92,36 @@ class TestClaudeService(unittest.TestCase):
         data = json.loads(response.data)
         self.assertIn('output', data)
         self.assertEqual(data['output'], "This is a mock webhook response")
+
+    def test_missing_env_variables(self):
+        # Temporarily remove environment variables
+        env_vars = ['RAG_KNOWLEDGE_CONTENT_1', 'PROMPT_INSTRUCTIONS']
+        saved_vars = {}
+        for var in env_vars:
+            if var in os.environ:
+                saved_vars[var] = os.environ.pop(var)
+
+        try:
+            response = self.app.get('/health')
+            self.assertEqual(response.status_code, 500)
+            data = json.loads(response.data)
+            self.assertEqual(data['status'], 'unhealthy')
+            self.assertTrue('error' in data)
+        finally:
+            # Restore environment variables
+            for var, value in saved_vars.items():
+                os.environ[var] = value
+
+    def test_chunked_content_loading(self):
+        # Set up multiple content chunks
+        os.environ['RAG_KNOWLEDGE_CONTENT_1'] = 'Chunk 1'
+        os.environ['RAG_KNOWLEDGE_CONTENT_2'] = 'Chunk 2'
+        os.environ['RAG_KNOWLEDGE_CONTENT_3'] = 'Chunk 3'
+
+        response = self.app.get('/health')
+        self.assertEqual(response.status_code, 200)
+        data = json.loads(response.data)
+        self.assertEqual(data['status'], 'healthy')
 
 if __name__ == '__main__':
     unittest.main()
