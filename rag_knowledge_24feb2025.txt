@@ -1,28 +1,648 @@
-Howard is a seasoned technology professional with over 20 years of experience in software development and architecture.
+<summary>
+# Howard Jong - Professional Profile
 
-Professional Experience:
-- Currently serving as Principal Software Architect at TechCorp (2020-present)
-- Led cloud transformation initiatives at CloudScale Solutions (2015-2020)
-- Senior Developer at InnovateNow (2010-2015)
 
-Technical Expertise:
-- Cloud Architecture: AWS, Azure, GCP
-- Languages: Python, Java, JavaScript
-- Frameworks: React, Node.js, Django
-- DevOps: Docker, Kubernetes, Jenkins
+## Core Professional Identity
+- Customer-obsessed product leader with 10+ years experience in healthcare and life science products
+- Successfully launched 4 products from 0 to 1 through a customer-centric approach
+- Consistent top 5% performer leveraging PhD background to transform complexity into clarity
+- Built and led cross-functional teams through data-driven experimentation and inclusive leadership
 
-Speaking Engagements:
-- Keynote speaker at CloudTech Summit 2024
-- Regular presenter at PyCon (2018-2024)
-- Tech mentor at Women Who Code meetups
 
-Publications:
-- "Cloud-Native Architecture Patterns" (2023)
-- "Scaling Microservices" (2022)
-- Regular contributor to tech blogs
+## Key Experience Areas
+- Product Management: Vision, strategy, roadmap prioritization, stakeholder management
+- Healthcare Technology: FHIR data, clinical workflows, data governance, CMS/ONC compliance
+- Research & Development: Catalyst development, commercialization, scientific publications
+- Leadership: Cross-functional team management, Agile methodologies, organizational transformation
 
-Contact:
-For professional inquiries, please email Howard through his website's contact form.
-Social: @howardtech on Twitter, Howard on LinkedIn
 
-Note: This is a sample knowledge base for testing purposes. Please replace with actual content as needed.
+## Career Highlights
+- Senior Product Manager at Smile Digital Health (2020-2024): Led Clinical Quality Improvement Suite
+- Product Manager at Smile Digital Health (2020-2022): Conceived and launched appSphere platform
+- Senior Research Scientist at A*STAR (2012-2018): Commercialized 2 chemical products with Fortune 500 partners
+- Education: Master’s in Business, PhD in Chemistry, BSc in Chemistry
+</summary>
+
+
+<main_content>
+<section id="professional_experience">
+# Professional Experience
+
+
+<subsection id="smile_digital_health_experience">
+## Smile Digital Health (Toronto, ON)
+**Time Period**: September 2020 - September 2024
+
+
+**Company Description**: Series B healthcare software company developing servers and applications enabling large enterprise health plans and public health agencies to exchange, compute, and analyze clinical data in FHIR and CQL.
+
+
+<role id="senior_product_manager">
+### Senior Product Manager, Clinical Applications
+**Time Period**: July 2022 – September 2024
+
+
+**Responsibilities**: Led go-to-market (GTM) activities and managed the product lifecycle for the Clinical Quality Intelligence Suite (CQIS), consisting of 4 products leveraging FHIR and CQL:
+- Digital Quality Measures (dQM)
+- Care Management
+- Clinical Decision Support (CDS)
+- Knowledge Artifact Lifecycle Management (KALM)
+
+
+**Key Achievements**:
+- Orchestrated end-to-end product strategy by synthesizing market research, user insights, and customer feedback
+- Created prioritized roadmaps aligned with OKRs and modeled financial projections
+- Led 5 cross-functional scrum/Agile teams leveraging customer feedback and iterative releases
+- Managed stakeholder expectations, training, and trade-offs to prioritize activities
+- Overcame market challenges including low adoption of underlying data standards (FHIR and CQL)
+- Successfully operated under severe resource constraints
+
+
+**Product Impacts**:
+- dQM: Reduced reporting time to quality agencies by over 90%, benefiting practices, ACOs, and health plans
+- Care Management: Improved patient outcomes, quality scores, and reimbursements by avoiding care gaps
+- CDS: Provided patient-specific recommendations based on best practice guidelines that adapted in real-time
+- KALM: Used AI/ML to boost rules authoring efficiency by 25% for informaticists as a VS Code extension
+- Financial Impact: Generated $745K revenue in year 1 post-launch with $4.5M in pipeline opportunities
+
+
+**Tech Stack**: Jira, Confluence, Productboard, Microsoft Office, Google Suite, Google Analytics, Tableau, Salesforce, Figma, AWS, OIDC, HL7, FHIR, CQL, SQL, Python
+</role>
+
+
+<role id="product_manager">
+### Product Manager, Workflow Applications
+**Time Period**: September 2020 – July 2022
+
+
+**Responsibilities**: Conceived, launched, and managed the end-to-end product lifecycle for appSphere, a third-party app management platform for OIDC and FHIR-based applications consisting of 3 components: 
+- Public app gallery
+- Secure developer portal
+- Admin management console
+
+
+**Key Achievements**:
+- Conducted customer, user, and market research to define product vision, strategy, roadmap, and requirements
+- Led 2 cross-functional scrum/Agile teams delivering iterative product releases based on customer feedback
+- Managed stakeholder expectations, training, and trade-offs to prioritize launch activities
+- Conducted sales demos and met delivery targets set by federal mandates
+- Overcame challenges in defining technical requirements from vague regulations
+- Successfully identified initial customer segment while catering to 3 distinct user personas
+- Solved complex integration challenges with customer authentication systems
+
+
+**Product Impacts**:
+- High enterprise adoption: Deployed to 33% of health plans and 75% of EHR vendors
+- Reduced time and effort for third-party app registrations and approvals by up to 97%
+- Generated $2.5M in revenue in year 1 with 2.5X ROI and grew customer base by 60% YOY
+</role>
+</subsection>
+
+
+<subsection id="astar_experience">
+## Institute of Chemical and Engineering Sciences, A*STAR (Singapore)
+**Time Period**: February 2012 – August 2018
+
+
+**Organization Description**: Singapore's national R&D entity with $5 billion per annum budget to support R&D and commercialization of technologies strategic to Singapore's economy.
+
+
+<role id="senior_research_scientist">
+### Senior Research Scientist, Commercial Lead
+**Time Period**: February 2012 – August 2018
+
+
+**Responsibilities**: Led a cross-functional team of 10 international scientists to conduct cutting-edge research, engineer small molecule catalysts, and develop novel processes to improve synthetic efficiency for drug manufacturing and electronic materials.
+
+
+**Key Achievements**:
+- Collaborated with multiple A*STAR institutes to leverage bioimaging, computational chemistry, materials science, and manufacturing expertise
+- Partnered with top international universities (University of Ottawa, NUS, NTU) and major pharmaceutical companies (Pfizer, MSD, GSK)
+- Established relationships with specialty chemical companies (Merck KGaA, DuPont)
+- Used computational modeling via supercomputers and high-throughput experimentation to accelerate discovery
+- Applied statistical methods like Design of Experiments (DoE) to optimize reaction parameters
+- Overcame commercialization challenges by resolving intellectual property rights, navigating safety regulations, addressing legal liability concerns, and managing international distribution
+
+
+**Research Impacts**:
+- Commercialized 2 chemical products for Fortune 500 pharma companies in 18 months; 2X faster than typical timeline
+- Developed 2 world-leading catalysts for cross-coupling reactions, validated by global industrials to improve production efficiency of drugs by 20-50%
+- Published 7 articles in impactful peer-reviewed journals
+- Filed 2 patents
+- Nominated for the prestigious President's Science Award in Singapore in 2017
+</role>
+</subsection>
+</section>
+
+
+<section id="education">
+# Education & Certifications
+
+
+**Advanced Degrees**:
+- Master of Management Innovation & Entrepreneurship: Smith School of Business, Queen's University (Canada)
+- Doctor of Philosophy (PhD) in Chemistry: University of British Columbia (Canada)
+- Bachelor of Science (BSc) in Chemistry: Simon Fraser University (Canada)
+
+
+**Professional Certifications**:
+- Google Data Analytics (Google)
+- Machine Learning and Data Science in Python (Udemy)
+- Lean Six-Sigma Green Belt (SixSigma.us)
+</section>
+
+
+<section id="product_expertise">
+# Product Development Expertise
+
+
+<subsection id="appsphere_product">
+## appSphere Platform
+
+
+**Product Type**: Workflow management for SMART on FHIR applications
+
+
+**Problem Statement**: Healthcare organizations struggle with managing third-party apps, risking CMS/ONC violations, confusion over relevant applications, and legal issues stemming from security breaches or non-compliance.
+
+
+**Solution Overview**: An integrated productivity suite built into Smile Digital Health that simplifies the registration, credentialing, and management of third-party SMART on FHIR apps.
+
+
+**Key Components**:
+1. **App Gallery for App Users**:
+   - Discover and use personalized lists of innovative in-house and third-party apps
+   - Filter apps based on specific requirements
+   - White-labeled with organization's branding for seamless experience
+   - Maintenance-free with automatic real-time updates based on admin console actions
+
+
+2. **Developer Portal for App Developers**:
+   - Test and register apps for admin approval
+   - Transition safely from sandbox testing to production access
+   - Support for privacy, security, and legal-risk mitigation
+   - Track and verify vendor credentials and assign legal accountability
+
+
+3. **Admin Console for System Admins**:
+   - Complete control of the entire app management lifecycle
+   - Curate app gallery for different user groups
+   - Flexible roles and permissions
+
+
+**Key Benefits**:
+- **Streamlined User Experience**: Intuitive workflows for app users, developers, and administrators
+- **Direct Data Access**: Simple, secure access to health information through SMART on FHIR apps
+- **Security & Legal Accountability**: End-to-end privacy and security with vendor traceability
+- **Resource Optimization**: Quick deployments, efficient registrations, approvals, and audit workflows
+- **Full Compliance**: Workflow optimized for current and evolving CMS and ONC regulations
+
+
+**Implementation Impact**:
+- Deployed to 33% of health plans and 75% of EHR vendors
+- Reduced third-party app registration and approval time by up to 97%
+- Generated $2.5M in revenue in year 1 with 2.5X ROI
+- Grew customer base by 60% YOY
+
+
+**Regulatory Context**:
+- Released in response to CMS Interoperability and Patient Access Final Rule (May 1, 2020)
+- Aligned with 21st Century Cures Act mandating FHIR data standards
+- Helped customers meet the July 1, 2021 enforcement deadline
+
+
+**See Also**: [Clinical Quality Intelligence Suite](#clinical_quality_suite), [Smile Health Data Fabric](#health_data_fabric)
+</subsection>
+
+
+<subsection id="clinical_quality_suite">
+## Clinical Quality Intelligence Suite (CQIS)
+
+
+**Product Type**: Healthcare quality measurement and improvement platform
+
+
+**Problem Statement**: Healthcare organizations face high costs and significant administrative burden for extracting, normalizing, aggregating, reporting, and submitting quality measures, with inconsistent reporting preventing true quality comparison.
+
+
+**Solution Components**:
+1. **Digital Quality Measures (dQM)**:
+   - Automated submission processes through direct API submission to CMS
+   - Intuitive UI for workflow management
+   - Uses open standards for increased accuracy
+   - Expertly authored measures with CQL experts
+
+
+2. **Care Management**:
+   - Identifies and prevents care gaps
+   - Analytics tool to help population health teams identify and deliver patient-specific options
+   - Improves patient outcomes and quality scores
+   - Increases reimbursements by avoiding care gaps
+
+
+3. **Clinical Decision Support (CDS)**:
+   - SMART on FHIR application launching within EHRs
+   - Provides dynamic recommendations at point of care
+   - Adapts to clinician input in real-time
+   - Uses clinical practice guidelines (CPG) with logic coded in CQL
+
+
+4. **Knowledge Artifact Lifecycle Management (KALM)**:
+   - VS Code extension for knowledge engineers and informaticians
+   - Helps author executable clinical content based on FHIR and CQL
+   - Incorporates AI/ML to accelerate conversion of narrative text to executable code
+   - Boosted rules authoring efficiency by 25%
+
+
+**Key Benefits**:
+- **Performance**: Processes 1M patients and 250M FHIR resources in <60 minutes
+- **Profitability**: Decreased manual abstraction effort, increased submission speed and accuracy
+- **Care Quality**: Improved access to actionable clinical performance data
+- **Collaboration**: Enhanced data sharing between clinicians and hospitals
+- **Continuous Value**: Foundation for improving clinical care via CDS, CPGs, and care gap monitoring
+
+
+**Technical Approach**:
+- Uses FHIR as the universal data standard
+- Employs CQL (Clinical Quality Language) as the logical representation model
+- Builds on harmonized data, logical, and metadata standards
+- Enables real-time clinical decision support based on latest knowledge
+- Creates a feedback loop to measure impact of clinical decision support tools
+
+
+**Financial Impact for Customers**:
+- Health plans with higher quality ratings (Star Ratings) receive significant financial bonuses ($174-$521 per member)
+- Approximately 36% of UnitedHealth Group's revenue comes from CMS-related activities
+- Higher-rated plans enjoy increased visibility in CMS marketing materials
+- Enhanced member satisfaction and retention rates
+
+
+**See Also**: [appSphere Platform](#appsphere_product), [Data Governance Experience](#data_governance)
+</subsection>
+
+
+<subsection id="health_data_fabric">
+## Smile Health Data Fabric (HDF)
+
+
+**Product Type**: Enterprise-level, scalable clinical data platform
+
+
+**Core Capabilities**:
+- Enterprise-level FHIR data interoperability
+- Data exchange capabilities
+- Foundational Clinical Data Repository (CDR)
+- Highly configurable integration with existing cloud infrastructure
+- Event-driven data endpoints
+- Clinical reasoning decision support services
+- Composable data fabric architecture
+
+
+**Key Benefits**:
+- Liberates data from traditional silos
+- Unlocks unrealized value from healthcare data
+- Provides competitive advantage for customers
+- Reduces burden through intelligent data automations
+
+
+**Differentiating Features**:
+- Most global product deployments in the industry
+- Builds on open-source HAPI FHIR (most complete implementation of FHIR standard)
+- "Build once, use everywhere" approach for scalability
+- No vendor lock-in with strict adherence to open standards
+- Enterprise-grade security with streamlined authorization and compliance monitoring
+- Rich support for identity and master data management (MDM)
+- Multiple security certifications (HITRUST, ISO 13485:2016, ISO/IEC 27001, SOC-2)
+
+
+**Compliance Capabilities**:
+- ONC Certification (g)(10) Standardized API
+- Drummond Group's Payer and Patient Access FHIR Certification
+- Provider Directory API and Patient Access API Certification for US Drug Formulary API
+- Support for CMS 2026 Proposed Rule requirements
+
+
+**Advanced Technologies**:
+- MegaScale for unlimited data storage and access in a single FHIR server
+- Distributed architecture for storage and scalability beyond industry standards
+
+
+**See Also**: [appSphere Platform](#appsphere_product), [Clinical Quality Intelligence Suite](#clinical_quality_suite)
+</subsection>
+</section>
+
+
+<section id="data_governance">
+## Data Governance Experience
+
+
+<topic id="data_governance_overview">
+### Healthcare Interoperability Fundamentals
+
+
+**Definition**: Data governance in healthcare ensures patient data is collected, stored, transmitted, and utilized according to consistent standards and policies, maintaining data quality and privacy.
+
+
+**Industry Challenge**: Healthcare organizations face complexities in navigating legacy systems, evolving standards, and diverse workflows while transitioning from HL7 Version 2 messaging to FHIR-based ecosystems.
+
+
+**Standards Comparison**:
+- **HL7 V2**: Foundational standard used by 90% of U.S. hospitals but with significant implementation variability
+- **FHIR**: Modern, resource-centric model using RESTful APIs, standardized data definitions, and robust extensibility support
+
+
+**Integration Challenges**:
+- Z-segment customizations in HL7 V2
+- Data normalization issues
+- Versioning complexity
+- Regulatory compliance requirements
+
+
+**Current State Assessment**: Despite adoption of FHIR R4 guided by US Core Implementation Guide and aligned with United States Core Data for Interoperability (USCDI), semantic inconsistencies and local customizations continue to create significant variability across providers, EHR vendors, and data repositories.
+</topic>
+
+
+<topic id="governance_challenges">
+### Data Governance Challenges in FHIR Systems
+
+
+**Semantic Variations Despite Uniform Profiles**:
+- **Local Code Systems**: Organizations often embed internal codes for labs, medications, and procedures that don't map cleanly to standard terminologies like LOINC, RxNorm, CPT, or SNOMED CT
+- **Extensions vs. Overloaded Fields**: Organizations may overextend standard fields to carry proprietary data or redefine existing extensions
+- **Partial Adoption**: Some sites implement only mandatory fields while others populate recommended or optional fields
+
+
+**Workflow Discrepancies**:
+- **Administrative Data Conventions**: Different handling of encounter reasons, location data, and other administrative information
+- **Timestamp Variations**: Inconsistent practices for status updates and timezone handling
+
+
+**Real-World Example**:
+- **Hospital X**: Returns Hemoglobin A1c with standard LOINC code 55454-3, fully populated valueQuantity and referenceRange
+- **Hospital Y**: Uses local code HA1CST for the same test with non-standard unit representation
+- **Impact**: Population health analysis querying for LOINC code "55454-3" will miss relevant data from Hospital Y without robust code-mapping
+</topic>
+
+
+<topic id="code_vs_semantic">
+### Code Normalization vs. Semantic Normalization
+
+
+**Key Differences**:
+
+
+| Aspect | Code Normalization | Semantic Normalization |
+|--------|-------------------|------------------------|
+| Focus | Mapping terminologies to standard code systems | Ensuring consistent meaning of coded data |
+| Example Challenge | Legacy lab code ↔ LOINC equivalence | Unit conversion (e.g., % vs. mmol/mol for HbA1c) |
+| Impact | Data discovery and aggregation | Clinical interpretation and decision-making |
+
+
+**Code Normalization Challenges**:
+- Local EHR or LIS codes differing from standard LOINC codes
+- Drugs recorded in text form or brand-specific identifiers rather than RxNorm
+- Problem list codes varying between ICD-10, SNOMED CT, or local synonyms
+
+
+**Semantic Normalization Challenges**:
+- Interpretation vs. Actual Value: Inconsistent labeling of results as "normal" or "abnormal"
+- Timing Discrepancies: Some systems use specimen collection date, others use result finalization date
+- Multi-Component Observations: Variation in how complex data is bundled or separated
+- Field Usage: Placement of context in comments or custom extensions rather than dedicated fields
+
+
+**Impact on Quality Measurement**:
+- CQL engines expecting numeric valueQuantity might misunderstand or skip readings stored as text
+- Methodological differences (fasting vs. non-fasting, venous vs. capillary blood) affect clinical validity
+- Inconsistent specimen type documentation can lead to invalid comparisons
+</topic>
+
+
+<topic id="solutions">
+### Practical Strategies for Data Governance
+
+
+**Code Normalization Solutions**:
+- **Terminology Management**: Maintain robust terminology services and concept mapping between local and standard codes
+- **Automated Validation**: Implement code validation checks to flag unrecognized codes for intervention
+- **Mapping at Ingestion**: Transform local codes to standard terminologies during the data ingestion process
+
+
+**Semantic Normalization Solutions**:
+- **Consistent Data Elements**: Standardize usage of fields like Observation.valueQuantity, keeping interpretations separate
+- **Profile-Based Validation**: Create and enforce organization-specific FHIR profiles requiring proper data formatting
+- **Documented Conventions**: Establish clear guidelines for how borderline results, flags, and comments should be recorded
+- **Flexible CQL Authoring**: Design measure logic to handle alternative fields or formats while transitioning to standards
+
+
+**Continuous Improvement Approach**:
+1. **Align with Standard Code Systems**: Enforce data mapping against terminology servers
+2. **Implement Profile-Level Rules**: Extend FHIR profiles with specific requirements for key data elements
+3. **Automate Validation**: Check both code use and semantic conformance at multiple stages
+4. **Monitor Quality Metrics**: Track recognized vs. unrecognized codes, completeness, and validity
+5. **Collaborate with Clinical Teams**: Involve clinicians in defining standardized documentation practices
+
+
+**Governance Benefits**:
+- Improved CDS outputs aligned with clinical guidelines
+- More accurate quality measure calculation
+- Enhanced care gap identification
+- Reduced costs associated with chronic care through preventative interventions
+</topic>
+</section>
+
+
+<section id="research_publications">
+# Research Publications
+
+
+<publication id="pub1">
+## One-Pot Palladium-Catalyzed Cross-Coupling Treble of Borylation, the Suzuki Reaction and Amination
+
+
+**Authors**: Howard Jong, Stanley T.-C. Eey, Yee Hwee Lim, Sangeeta Pandey, Nurul Azmah Bte Iqbal, Fui Fong Yong, Edward G. Robins, Charles W. Johannes
+
+
+**Publication**: Advanced Synthesis & Catalysis, 2017, 359, 616-622
+
+
+**Research Focus**: Development of a sequential palladium-catalyzed cross-coupling procedure for borylation, Suzuki reaction, and amination to assemble molecules with multi-aryl backbones.
+
+
+**Key Contributions**:
+- Developed methodology using meta-terarylphosphine ligand Cy*Phine as air- and moisture-stable precatalyst
+- Improved efficiency of one-pot borylation-Suzuki reactions
+- Tuned Pd-Cy*Phine system to furnish one-pot, borylation-Suzuki reaction-amination (BSA) cross-coupling
+- Demonstrated successful integration of complementary conditions for three distinctly different reactions
+- Achieved average yields of 74-94% for each segment with 50-84% yield over entire three-step sequence
+</publication>
+
+
+<publication id="pub2">
+## Empirical and Computational Insights into N-Arylation Reactions Catalyzed by Palladium meta-Terarylphosphine Catalyst
+
+
+**Authors**: Fui Fong Yong, Adrian M. Mak, Wenqin Wu, Michael B. Sullivan, Edward G. Robins, Charles W. Johannes, Howard Jong, Yee Hwee Lim
+
+
+**Publication**: ChemPlusChem, 2017, 82, 750-757
+
+
+**Research Focus**: Investigation of in situ generated Pd-Cy*Phine catalyst applied to N-arylation of primary and secondary amines.
+
+
+**Key Findings**:
+- Demonstrated high performance across multiple substrate classes
+- Showed subtle performance differences between meta-terarylphosphine (Cy*Phine) and biarylphosphine (XPhos)
+- DFT studies revealed comparable reaction energetics in catalytic cycle steps for both Pd-Cy*Phine and Pd-XPhos
+- Computational investigation indicated putative rate-determining step occurs after amine binding
+- Explained why meta-terarylphosphine architecture showed similar performance to biarylphosphine in N-arylation
+</publication>
+
+
+<publication id="pub3">
+## Mechanistic Insights and Implications of Dearomative Rearrangement in Copper-Free Sonogashira Cross-Coupling Catalyzed by Pd-Cy*Phine
+
+
+**Authors**: Adrian M. Mak, Yee Hwee Lim, Howard Jong, Yong Yang, Charles W. Johannes, Edward G. Robins, Michael B. Sullivan
+
+
+**Publication**: Organometallics, 2016, 35, 1036-1045
+
+
+**Research Focus**: Investigation of reaction mechanism for in situ prepared Pd-Cy*Phine catalyst in copper-free Sonogashira coupling using density functional theory.
+
+
+**Key Findings**:
+- Examined significance of meta-terarylphosphine ligand architecture in enhancing catalytic activity
+- Calculated reaction barriers and free energies for catalytic cycle steps
+- Determined that suppression of dearomative rearrangement pathway is likely important for improved performance
+- Identified that presence of third phenyl ring in teraryl scaffold deters dearomative rearrangement
+- Explained how this structural feature removes substrate dependence and minimizes distraction from catalytic cycle
+</publication>
+
+
+<publication id="pub4">
+## Decarboxylative/Sonogashira-type cross-coupling using PdCl2(Cy*Phine)2
+
+
+**Authors**: Yong Yang, Yee Hwee Lim, Edward G. Robins, Charles W. Johannes
+
+
+**Publication**: RSC Advances, 2016, 6, 72810-72814
+
+
+**Research Focus**: Application of PdCl2(Cy*Phine)2 precatalyst for decarboxylative cross-coupling with diverse heterocyclic compounds.
+
+
+**Key Contributions**:
+- Developed effective catalyst system for decarboxylative cross-coupling with diverse aryl, heteroaryl, and alkyl chlorides
+- Demonstrated functionality with unprotected functional groups
+- Extended methodology to first synthesis of symmetrical di(heteroaryl)alkynes via tandem Sonogashira/decarboxylative coupling
+- Provided complementary synthetic strategy to copper-free Sonogashira protocols
+- Achieved good to excellent yields (82-99%) for diverse substrate scope
+</publication>
+
+
+<publication id="pub5">
+## One-pot Suzuki-Heck relay to prepare industrially valuable intermediates using the Pd-Cy*Phine catalyst system
+
+
+**Authors**: Uttam K. Das, Roxanne Clément, Charles W. Johannes, Edward G. Robins, Howard Jong, R. Tom Baker
+
+
+**Publication**: Catalysis Science & Technology, 2017, 7, 4599-4603
+
+
+**Research Focus**: Development of one-pot, palladium-catalyzed Suzuki-Heck sequence for pharmaceutical intermediates and organoelectronic materials.
+
+
+**Key Contributions**:
+- Created rare example of one-pot Suzuki-Heck sequence applicable to APIs and organoelectronic materials
+- Used high throughput screening to expedite development and survey strategies
+- Demonstrated interchangeability of coupling partners
+- Eliminated need for intermediate isolation, improving process efficiency
+- Suppressed by-product formation through optimized reaction conditions
+- Achieved up to 93% yield for challenging coupling reactions
+</publication>
+
+
+<publication id="pub6">
+## Palladium-meta-Terarylphosphine Catalyst for the Mizoroki-Heck Reaction of (Hetero)Aryl Bromides and Functional Olefins
+
+
+**Authors**: Daniel Weiliang Tay, Howard Jong, Yee Hwee Lim, Wenqin Wu, Xinying Chew, Edward G. Robins, Charles W. Johannes
+
+
+**Publication**: Journal of Organic Chemistry, 2015, 80, 4054-4063
+
+
+**Research Focus**: Application of evolutionary meta-terarylphosphine ligand architecture of Cy*Phine for Mizoroki-Heck reactions.
+
+
+**Key Contributions**:
+- Demonstrated powerful catalyst system for challenging functional olefins
+- Used high-throughput screening methodology to identify DMF and NaHCO3 as optimal solvent/base combination
+- Successfully coupled challenging and industrially valuable substrates including electron-rich heteroaryl bromides
+- Achieved excellent yields (up to 99%) with unprecedented substrate diversity
+- Demonstrated compatibility with unprotected functional groups at low catalyst loadings
+- Outperformed many state-of-the-art commercial alternatives
+</publication>
+
+
+<publication id="pub7">
+## Palladium precatalysts containing meta-terarylphosphine ligands for expedient copper-free Sonogashira cross-coupling reactions
+
+
+**Authors**: Yong Yang, Joyce Fen Yan Lim, Xinying Chew, Edward G. Robins, Charles W. Johannes, Yee Hwee Lim, Howard Jong
+
+
+**Publication**: Catalysis Science & Technology, 2015, 5, 3501-3506
+
+
+**Research Focus**: Development of palladium complexes using variations of meta-terarylphosphine ligand for copper-free Sonogashira coupling.
+
+
+**Key Contributions**:
+- Developed three novel air- and moisture-stable palladium complexes based on Cy*Phine architecture
+- Demonstrated exceptional performance in copper-free Sonogashira cross-coupling of challenging substrates
+- Showed modestly improved reaction rates with electron-donating substituents on ligand periphery
+- Provided operational simplicity compared to in situ catalyst formation
+- Achieved high yields for heteroaromatic and unprotected functional groups in both coupling partners
+</publication>
+
+
+<publication id="pub8">
+## A Versatile and Efficient Palladium-meta-Terarylphosphine Catalyst for the Copper-Free Sonogashira Coupling of (Hetero-)Aryl Chlorides and Alkynes
+
+
+**Authors**: Yong Yang, Xinying Chew, Charles W. Johannes, Edward G. Robins, Howard Jong, Yee Hwee Lim
+
+
+**Publication**: European Journal of Organic Chemistry, 2014, 7184-7192
+
+
+**Research Focus**: Development of novel meta-terarylphosphine ligand for copper-free Sonogashira cross-coupling reactions.
+
+
+**Key Contributions**:
+- Created Cy*Phine, a highly active ligand for promoting copper-free Sonogashira reactions when combined with palladium
+- Demonstrated significant performance advantages over biarylphosphine congeners
+- Developed expedient protocol for challenging electron-rich aryl chlorides and terminal alkynes
+- Achieved excellent yields with efficient substrate utilization and minimal byproduct generation
+- Demonstrated tolerance for diverse substrates with unprotected functional groups
+- Specifically designed for applicability to fine-chemicals industry
+</publication>
+</section>
+
+
+<section id="testimonials">
+# Professional Testimonials
+
+
+> "One of Howard's standout qualities is his ability to manage emerging and difficult products, both technologically and in terms of market development. Howard's dedication, insight, and innovative mindset make him an invaluable asset to our team."
+
+
+*Additional testimonials available on LinkedIn: https://www.linkedin.com/in/howardjong/*
+</section>
+</main_content>
