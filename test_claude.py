@@ -9,7 +9,7 @@ def test_claude_response():
     claude_config = create_claude_assistant()
     
     # Test question
-    test_question = "What can you tell me about Howard's technical expertise?"
+    test_question = "Tell me about Howard and highlight some of his technical expertise."
     
     # Query Claude
     response = query_claude(test_question, claude_config)

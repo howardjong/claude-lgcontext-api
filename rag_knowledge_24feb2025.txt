@@ -146,7 +146,6 @@
 
 
 **Professional Certifications**:
-- Google Data Analytics (Google)
 - Machine Learning and Data Science in Python (Udemy)
 - Lean Six-Sigma Green Belt (SixSigma.us)
 </section>
@@ -199,7 +198,7 @@
 
 
 **Implementation Impact**:
-- Deployed to 33% of health plans and 75% of EHR vendors
+- Deployed to 33% of Smile's health plans and 75% of EHR vendors
 - Reduced third-party app registration and approval time by up to 97%
 - Generated $2.5M in revenue in year 1 with 2.5X ROI
 - Grew customer base by 60% YOY
