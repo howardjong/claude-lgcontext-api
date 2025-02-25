@@ -14,13 +14,13 @@ def create_claude_assistant():
             with open("rag_knowledge_24feb2025.txt", "r", encoding="utf-8") as f:
                 knowledge_content = f.read()
 
+            # Read instructions from file
+            with open("prompt_instructions.txt", "r", encoding="utf-8") as f:
+                instructions = f.read()
+
             assistant_config = {
                 "knowledgeContent": knowledge_content,
-                "instructions": (
-                    "Provide clear, concise, and professional responses inspired by Joanna Stern's tone and style.\n"
-                    # Rest of instructions...
-                ),
-                # Use latest model as per blueprint
+                "instructions": instructions,
                 "model": "claude-3-5-sonnet-20241022"
             }
             with open(config_path, "w", encoding="utf-8") as f:
