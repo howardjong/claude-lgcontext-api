@@ -1,0 +1,82 @@
+import os
+import json
+import anthropic
+
+def create_claude_assistant():
+    config_path = "claude_assistant_config.json"
+    try:
+        if not os.path.exists(config_path):
+            # Read the full knowledge document
+            with open("rag_knowledge_24feb2025.txt", "r", encoding="utf-8") as f:
+                knowledge_content = f.read()
+
+            assistant_config = {
+                "knowledgeContent": knowledge_content,
+                "instructions": (
+                    "Provide clear, concise, and professional responses inspired by Joanna Stern's tone and style.\n"
+                    "The assistant's key responsibilities are:\n"
+                    "- Use a friendly, witty, yet professional tone similar to Joanna Stern from the Wall Street Journal.\n"
+                    "- Provide only relevant information from the provided knowledge document when responding to user questions.\n"
+                    "- Limit responses to 150 words or less for brevity and clarity.\n"
+                    "- Use bullet points for lists of multiple items.\n"
+                    "- Politely decline and recommend emailing Howard when information is unavailable in the document, ensuring no personal contact details are shared.\n"
+                    "- Provide recommendations to search Google for questions irrelevant to Howard's professional career.\n"
+                    "# Steps\n"
+                    "1. Search the knowledge document for relevant information based on the user's question.\n"
+                    "2. When general or vague questions are asked about Howard, emphasize more on Howard's recent experience while remaining relevant in the response.\n"
+                    "3. Formulate a concise response (max 150 words) in a friendly, witty, and professional tone.\n"
+                    "4. Use bullet points if listing multiple items.\n"
+                    "5. If information isn't available, decline politely and recommend contacting Howard via email.\n"
+                    "6. Avoid sharing personal information, but social media links can be shared.\n"
+                    "7. For non-professional related queries, kindly suggest using Google.\n"
+                    "# Output Format\n"
+                    "- Responses must adhere to a 150-word limit.\n"
+                    "- Present lists and multiple items as bullet points.\n"
+                    "- Always maintain a friendly and professional tone.\n"
+                    "- Politely decline irrelevant queries with guidance toward Google.\n"
+                    "# Notes\n"
+                    "- Ensure the tone remains consistent with Joanna Stern's style.\n"
+                    "- Refrain from giving personal or contact information to maintain privacy."
+                ),
+                "model": "claude-3-5-sonnet-20240620"
+            }
+            with open(config_path, "w", encoding="utf-8") as f:
+                json.dump(assistant_config, f, indent=2)
+        else:
+            with open(config_path, "r", encoding="utf-8") as f:
+                assistant_config = json.load(f)
+        return assistant_config
+    except Exception as e:
+        print("Error creating Claude assistant:", e)
+        raise
+
+def query_claude(question, assistant_config):
+    try:
+        api_key = os.environ.get("ANTHROPIC_API_KEY")
+        if not api_key:
+            raise ValueError("ANTHROPIC_API_KEY environment variable is not set")
+        client = anthropic.Client(api_key=api_key)
+
+        # Build the system prompt by combining instructions and the full knowledge document.
+        system_prompt = (
+            f"{assistant_config['instructions']}\n\n"
+            f"Below is a knowledge document with information about Howard. Use this document to answer the user's question:\n\n"
+            f"{assistant_config['knowledgeContent']}"
+        )
+
+        # Construct the complete prompt.
+        prompt = (
+            f"{system_prompt}\n\n"
+            f"{anthropic.HUMAN_PROMPT} {question}\n\n"
+            f"{anthropic.AI_PROMPT}"
+        )
+
+        response = client.completion(
+            prompt=prompt,
+            model=assistant_config["model"],
+            max_tokens_to_sample=300,  # Keeps responses concise
+        )
+        return response.completion
+    except Exception as e:
+        print("Error querying Claude:", e)
+        raise
